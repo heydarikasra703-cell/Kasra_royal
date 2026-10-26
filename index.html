@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>کسرا ❤️ رویال | برای عشق همیشگی من</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #ff72a5;
+  --hot-pink: #ff3f80;
+  --dark: #08080d;
+  --card: #111117;
+  --white: #fff0f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: var(--dark);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 6%;
+  background: rgba(8,8,13,.94);
+  border-bottom: 1px solid #ffffff18;
+  backdrop-filter: blur(15px);
+}
+
+.logo {
+  color: var(--pink);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: var(--pink);
+}
+
+.hero {
+  min-height: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 110%, #a51d50 0%, transparent 55%),
+    linear-gradient(135deg, #160b18, #08080d 70%);
+}
+
+.hero::before {
+  content: "♡";
+  position: absolute;
+  font-size: 280px;
+  color: #ff72a508;
+  left: 4%;
+  top: -50px;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 750px;
+}
+
+.eyebrow {
+  color: var(--pink);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(30px, 6vw, 58px);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+h1 span {
+  color: var(--pink);
+}
+
+.hero p {
+  color: #e4cdd7;
+  line-height: 2.3;
+  font-size: 17px;
+}
+
+.heart {
+  color: var(--hot-pink);
+  display: inline-block;
+  animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff8bb5, #e52d70);
+  color: #260814;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 25px;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px #ff3f8044;
+}
+
+.section {
+  max-width: 1100px;
+  padding: 60px 20px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--pink);
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+
+.section-title small {
+  display: block;
+  color: #aa8d9a;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: linear-gradient(145deg, #17131b, #0e0d13);
+  border: 1px solid #ff72a526;
+  border-radius: 18px;
+  padding: 25px 20px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--pink);
+}
+
+.card .emoji {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: var(--pink);
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.card p {
+  color: #d8c4ce;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.letter {
+  max-width: 760px;
+  margin: auto;
+  background:
+    radial-gradient(ellipse at top, #fff8f0, #f9dce5);
+  color: #39202b;
+  padding: clamp(25px, 6vw, 55px);
+  border-radius: 5px 5px 14px 14px;
+  box-shadow: 0 15px 60px #0005;
+  position: relative;
+  line-height: 2.5;
+}
+
+.letter h2 {
+  color: #a52250;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.letter p {
+  margin-bottom: 12px;
+}
+
+.signature {
+  text-align: center;
+  color: #b52456;
+  font-size: 23px;
+  font-weight: 800;
+  margin-top: 25px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.message {
+  background: #171018;
+  border: 1px solid #ff72a52a;
+  padding: 18px;
+  border-radius: 12px;
+  line-height: 2;
+  color: #f5dce6;
+  cursor: pointer;
+  text-align: right;
+  font-family: inherit;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.message:hover {
+  background: #381628;
+  border-color: var(--pink);
+}
+
+.message span {
+  color: var(--pink);
+}
+
+.love-game {
+  text-align: center;
+  padding: 35px 20px;
+  background: linear-gradient(135deg, #24101d, #110c15);
+  border: 1px solid #ff72a52c;
+  border-radius: 20px;
+}
+
+#loveAnswer {
+  min-height: 65px;
+  margin-top: 20px;
+  line-height: 2.2;
+  color: var(--pink);
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 45px 20px;
+  border-top: 1px solid #ffffff12;
+  color: #d8a8bc;
+  line-height: 2.5;
+}
+
+footer h2 {
+  color: var(--pink);
+  font-size: 32px;
+}
+
+footer .forever {
+  font-size: 13px;
+  color: #8c687a;
+  margin-top: 12px;
+}
+
+.floating-heart {
+  position: fixed;
+  bottom: -30px;
+  z-index: 200;
+  pointer-events: none;
+  color: #ff4f8d;
+  animation: floatUp 4s linear forwards;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh) rotate(35deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 360px;
+  }
+
+  .section {
+    padding: 42px 16px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="#" class="logo">♥ برای همیشه، رویال</a>
+  <nav>
+    <a href="#home">صفحه اصلی</a>
+    <a href="#messages">پیام‌های عاشقانه</a>
+    <a href="#letter">نامه‌ی من</a>
+    <a href="#love">چقدر دوستت دارم؟</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">یک سایت مخصوص تو، رویال من 👑</div>
+    <h1>کسرا <span>عاشق رویال</span> است... <span class="heart">♥</span></h1>
+    <p>
+      رویال جانم، تو فقط یک احساس نیستی...<br>
+      تو یکی از قشنگ‌ترین اتفاق‌های دنیای منی! 💗
+    </p>
+    <a href="#letter" class="btn">نامه‌ی مخصوص تو 💌</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    چرا رویال؟ 💗
+    <small>چون بعضی آدم‌ها واقعاً خاص‌اند...</small>
+  </h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🌷</div>
+      <h3>چون مهربونی</h3>
+      <p>چون بودنت یه حس قشنگه و مهربونی‌ات دنیا رو دوست‌داشتنی‌تر می‌کنه.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🥹</div>
+      <h3>چون لبخندت</h3>
+      <p>چون فکر کردن به لبخندت هم می‌تونه یه روز معمولی رو قشنگ کنه.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">👑</div>
+      <h3>چون خودِ خودتی</h3>
+      <p>لازم نیست کسی دیگه باشی؛ همین رویال بودنته که برام دوست‌داشتنیه.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="letter">
+  <h2 class="section-title">💌 نامه‌ای برای ملکه‌ی قلبم</h2>
+
+  <div class="letter">
+    <h2>عزیزم رویال ♥</h2>
+
+    <p>رویال قشنگم، سلام به قشنگ‌ترین اسم دنیام! ❤️</p>
+
+    <p>
+      من، کسرا، می‌خوام یه چیزی رو بهت بگم؛
+      تو برای من یه آدم معمولی نیستی.
+      تو کسی هستی که فکر کردن بهش می‌تونه لبخند بیاره روی لبام.
+    </p>
+
+    <p>
+      قربونت برم من، فدای اون قلب مهربونت بشم،
+      الهی قربون خنده‌هات برم که انقدر قشنگن!
+      کاش می‌تونستی از توی چشمام ببینی که چقدر برام عزیزی. 💗
+    </p>
+
+    <p>
+      رویال جانم، تو لایق بهترین حس‌های دنیایی؛
+      لایق آرامش، احترام، شادی و کلی اتفاق قشنگ.
+      امیدوارم همیشه دلت بخنده و بدونی که بودنت ارزشمنده.
+    </p>
+
+    <p>
+      اگه یه روز خسته بودی، یادت باشه که تو همون آدم دوست‌داشتنی‌ای
+      هستی که شایسته‌ی کلی مهربونیه.
+      تو باارزشی، رویال من. 🌷
+    </p>
+
+    <p>
+      این سایت یه گوشه‌ی کوچیک از حرف‌هاییه که می‌شه بهت گفت؛
+      چون بعضی حس‌های قشنگ رو نمی‌شه توی چند خط جا داد.
+    </p>
+
+    <div class="signature">
+      با کلی عشق، کسرا ❤️
+      <br>
+      برای رویالِ دوست‌داشتنی 👑
+    </div>
+  </div>
+</section>
+
+<section class="section" id="messages">
+  <h2 class="section-title">
+    پیام‌های عاشقانه برای رویال 💕
+    <small>روی هر پیام کلیک کن تا کپی بشه!</small>
+  </h2>
+
+  <div class="messages">
+    <button class="message" onclick="copyMessage(this)">
+      <span>♥</span> رویال جان، الهی قربونت برم؛ تو چقدر دوست‌داشتنی‌ای! 🥹
+    </button>
+
+    <button class="message" onclick="copyMessage(this)">
+      <span>♥</span> قربون اون قلب مهربونت برم که انقدر قشنگه. 💗
+    </button>
+
+    <button class="message" onclick="copyMessage(this)">
+      <span>♥</span> کسرا یه عالمه حرف داره، ولی ته همه‌شون می‌رسه به دوستت دارم، رویال! ❤️
+    </button>
+
+    <button class="message" onclick="copyMessage(this)">
+      <span>♥</span> ملکه‌ی قشنگ من، امیدوارم همیشه لبخند روی لبات باشه. 👑
+    </button>
+
+    <button class="message" onclick="copyMessage(this)">
+      <span>♥</span> فدای اون اسمت بشم که خوندنش هم حس قشنگی داره. 💌
+    </button>
+
+    <button class="message" onclick="copyMessage(this)">
+      <span>♥</span> رویال من، تو لایق تمام عشق‌ها و مهربونی‌های دنیایی. 🌷
+    </button>
+
+    <button class="message" onclick="copyMessage(this)">
+      <span>♥</span> یه بغل پر از آرامش و یه دنیا بوس مجازی برای تو! 💋
+    </button>
+  </div>
+</section>
+
+<section class="section" id="love">
+  <div class="love-game">
+    <h2 class="section-title">رویال، می‌دونی چقدر عزیزی؟ 💖</h2>
+
+    <p>روی دکمه بزن تا یه پیام مخصوص از کسرا ببینی!</p>
+
+    <button class="btn" onclick="showLove()">
+      پیام عاشقانه‌ی منو باز کن 💌
+    </button>
+
+    <div id="loveAnswer" aria-live="polite"></div>
+  </div>
+</section>
+
+<footer>
+  <div style="font-size:40px">♡</div>
+  <h2>رویال...</h2>
+  <p>تو یه اسم ساده نیستی؛ یه حس قشنگی توی دنیای منی. 💗</p>
+  <p>کسرا <span class="heart">♥</span> رویال</p>
+  <div class="forever">ساخته شده با عشق، برای رویال 👑</div>
+</footer>
+
+<script>
+const loveMessages = [
+  "رویال جانم، قربونت برم! تو خیلی عزیزی. ❤️",
+  "الهی فدای قلب مهربونت بشم، ملکه‌ی دوست‌داشتنی من! 👑",
+  "کسرا یه عالمه حرف عاشقانه برای رویال داره! 💌",
+  "رویال قشنگم، امیدوارم امروزت پر از لبخند باشه. 🌷",
+  "قربون خنده‌هات برم که دنیا رو قشنگ‌تر می‌کنن! 🥹",
+  "یه دنیا عشق و مهربونی تقدیم به رویال عزیزم! 💗",
+  "یادت نره که تو لایق قشنگ‌ترین اتفاق‌های دنیایی. 💖",
+  "رویال! اگه قرار بود یه اسم رو با قلبم بنویسم، اسم تو بود. ❤️"
+];
+
+function showLove() {
+  const answer = document.getElementById("loveAnswer");
+  const message = loveMessages[
+    Math.floor(Math.random() * loveMessages.length)
+  ];
+
+  answer.style.opacity = 0;
+
+  setTimeout(() => {
+    answer.textContent = message;
+    answer.style.opacity = 1;
+    createHearts();
+  }, 180);
+}
+
+async function copyMessage(button) {
+  const text = button.innerText.replace("♥", "").trim();
+
+  try {
+    await navigator.clipboard.writeText(text);
+    button.dataset.original = button.dataset.original || button.innerText;
+    button.innerText = "کپی شد عزیزم! 💗";
+
+    setTimeout(() => {
+      button.innerText = button.dataset.original;
+    }, 1200);
+  } catch (error) {
+    window.prompt("این پیام رو کپی کن:", text);
+  }
+}
+
+function createHearts() {
+  for (let i = 0; i < 12; i++) {
+    const heart = document.createElement("div");
+    heart.className = "floating-heart";
+    heart.textContent = ["♥", "♡", "💗", "💕"][
+      Math.floor(Math.random() * 4)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (16 + Math.random() * 20) + "px";
+    heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+  }
+}
+
+// قلب‌های شناور گاه‌به‌گاه
+setInterval(() => {
+  if (Math.random() > 0.55) createHearts();
+}, 4500);
+</script>
+
+</body>
+</html>
